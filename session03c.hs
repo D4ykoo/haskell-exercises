@@ -1,0 +1,14 @@
+-- 1) which types have the following values
+-- [’a’,’b’,’c’]
+-- (’a’,’b’,’c’)
+-- [(False,’0’),(True,’1’)]
+-- ([False,True],[’0’,’1’])
+-- [tail,init,reverse]
+--
+-- 2) Which types have the following functions?
+-- second xs = head (tail xs)
+-- swap (x,y) = (y,x)
+-- pair x y = (x,y)
+-- double x = x*2
+-- palindrome xs = reverse xs == xs
+-- twice f x = f (f x)

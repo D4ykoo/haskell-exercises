@@ -1,0 +1,31 @@
+---------------------------
+-- Zip implementieren S. 12
+---------------------------
+--zip' :: [a] -> [b] -> [(a, b)]
+-- zip' (x:xs) (y:ys) = [(x, y) : (xs take 1) (ys take 1)]y !! i 
+-- zip' x y = [((x !! i), (y !! i)) | i <- [0..(length x)], i < (length x) && i < (length y)]
+---------------------------
+-- 1) Ein Tripel (x,y,z) aus positiven ganzen Zahlen heißt
+-- pythagoreisch, falls x2+x2 = z2
+-- Definieren Sie unter Verwendung einer List-Komprehension die Funktion: pyths :: Int -> [(Int,Int,Int)] 
+-- die eine ganze positive Zahl n auf alle pythagoreischen Tripel mit Elementen aus [1...n] abbildet
+-- Bsp.: > pyths 5
+--         [(3,4,5),(4,3,5)]
+---------------------------
+
+---------------------------
+-- 2) perfekt, wenn ihr wert glkeich der summe ihrer (positiven) teiler, ohne die zahl selbst ist
+-- Funktion definieren: perfects :: Int -> [Int], die die Liste aller perfekten Zahlen bis zu einer bestimmten Grenze berechnet.
+-- Bsp.: > perfects 500
+--         [6,28,496]
+---------------------------
+
+
+---------------------------
+-- 3) Skalarprodukt zweier Listen von ganzen Zahlen (Listen als Vektoren)
+-- mit gleicher Listenlänge n ist definiert als die Summe der Produkte
+-- Korrespondierender Zahlen. Summe(xsi * ysi)
+--scalar_prod :: [Int] -> [Int] -> In
+-- scalar_prod [2,3,4] [4,5,6]
+-- 47
+---------------------------
