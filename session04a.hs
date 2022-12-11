@@ -27,7 +27,11 @@ safetail''' xs = tail xs
 --
 -- drei Varianten des Operators (||) mit pattern matching
 -- or' x y =  if x == y then x else y
- 
+-- (||') :: Bool -> Bool -> 
+--_ ||' _ = _
+myOr' _ True = True
+myOr' True _= True
+myOr' _ _ = False
 
 -- ##########
 -- Aufgabe 3
@@ -36,4 +40,4 @@ safetail''' xs = tail xs
 -- && umschreiben zu bedingten ausdürcken
 -- True && True = True
 -- _ && _ = False
-
+myAnd' x y = if x == y then True else False
